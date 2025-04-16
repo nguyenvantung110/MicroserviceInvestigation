@@ -1,0 +1,63 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34525.116
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiGateway", "ApiGateway\ApiGateway.csproj", "{B7B18BE6-75E6-4C8E-BBC8-6124319CD424}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{1F01CE45-D800-45B1-9BC2-9E8B2948BD5F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderService", "Services\OrderService\OrderService.csproj", "{623AE1F4-D879-4B26-9ABD-B63E6F4A2EF5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProductService", "Services\ProductService\ProductService.csproj", "{08F180BA-AEE9-4864-889B-6B5FADEF186B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Docker", "Docker", "{9ED173F0-B63E-4CA6-9E1A-245F735F0BC8}"
+	ProjectSection(SolutionItems) = preProject
+		docker-compose.yml = docker-compose.yml
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OcelotGateway", "OcelotGateway\OcelotGateway.csproj", "{D29D48BF-5F43-4D90-A36E-D448ECBF11D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LB_Product", "LB_Product\LB_Product.csproj", "{3718A1C2-DB90-4566-86B8-D563175CC786}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoadBalancerServices", "LoadBalancerServices", "{1404D1B4-2A2F-4EE0-B498-F87A2516BE7A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B7B18BE6-75E6-4C8E-BBC8-6124319CD424}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B7B18BE6-75E6-4C8E-BBC8-6124319CD424}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B7B18BE6-75E6-4C8E-BBC8-6124319CD424}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B7B18BE6-75E6-4C8E-BBC8-6124319CD424}.Release|Any CPU.Build.0 = Release|Any CPU
+		{623AE1F4-D879-4B26-9ABD-B63E6F4A2EF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{623AE1F4-D879-4B26-9ABD-B63E6F4A2EF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{623AE1F4-D879-4B26-9ABD-B63E6F4A2EF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{623AE1F4-D879-4B26-9ABD-B63E6F4A2EF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08F180BA-AEE9-4864-889B-6B5FADEF186B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08F180BA-AEE9-4864-889B-6B5FADEF186B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08F180BA-AEE9-4864-889B-6B5FADEF186B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08F180BA-AEE9-4864-889B-6B5FADEF186B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D29D48BF-5F43-4D90-A36E-D448ECBF11D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D29D48BF-5F43-4D90-A36E-D448ECBF11D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D29D48BF-5F43-4D90-A36E-D448ECBF11D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D29D48BF-5F43-4D90-A36E-D448ECBF11D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3718A1C2-DB90-4566-86B8-D563175CC786}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3718A1C2-DB90-4566-86B8-D563175CC786}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3718A1C2-DB90-4566-86B8-D563175CC786}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3718A1C2-DB90-4566-86B8-D563175CC786}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{623AE1F4-D879-4B26-9ABD-B63E6F4A2EF5} = {1F01CE45-D800-45B1-9BC2-9E8B2948BD5F}
+		{08F180BA-AEE9-4864-889B-6B5FADEF186B} = {1F01CE45-D800-45B1-9BC2-9E8B2948BD5F}
+		{3718A1C2-DB90-4566-86B8-D563175CC786} = {1404D1B4-2A2F-4EE0-B498-F87A2516BE7A}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11C4C977-77B5-448F-A540-A22860EA1CA4}
+	EndGlobalSection
+EndGlobal
